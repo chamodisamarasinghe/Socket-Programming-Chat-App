@@ -1,10 +1,7 @@
 package client;
 
 import javafx.event.ActionEvent;
-import javafx.scene.control.Button;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.RadioButton;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.layout.Pane;
 
 public class LoginFormController {
@@ -20,10 +17,16 @@ public class LoginFormController {
     public TextField txtRegPhoneNo;
     public RadioButton male;
     public RadioButton female;
+    public Button getStarted;
+    public Label success;
+    public Label controlRegLabel;
 
     public void login(ActionEvent actionEvent) {
     }
 
     public void handleButtonAction(ActionEvent actionEvent) {
+    }
+
+    public void registration(ActionEvent actionEvent) {
     }
 }
