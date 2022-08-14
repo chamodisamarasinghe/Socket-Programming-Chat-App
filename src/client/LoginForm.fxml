@@ -49,52 +49,75 @@
             </Pane>
             <Pane fx:id="pnSignUp" prefHeight="200.0" prefWidth="200.0">
                <children>
-                  <Label alignment="CENTER" layoutY="14.0" prefHeight="96.0" prefWidth="675.0" text="Sign Up" textFill="#42c322">
+                  <Label alignment="CENTER" layoutX="1.0" layoutY="14.0" prefHeight="66.0" prefWidth="675.0" text="Sign Up" textFill="#42c322">
                      <font>
                         <Font name="System Bold" size="44.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="txtRegFirstname" layoutX="84.0" layoutY="129.0" prefHeight="53.0" prefWidth="533.0" promptText="Full Name">
+                  <TextField fx:id="txtRegFirstname" layoutX="84.0" layoutY="104.0" prefHeight="53.0" prefWidth="533.0" promptText="Full Name">
                      <font>
                         <Font name="System Bold" size="21.0" />
                      </font>
                   </TextField>
-                  <TextField fx:id="txtRegname" layoutX="84.0" layoutY="197.0" prefHeight="53.0" prefWidth="533.0" promptText="Username">
+                  <TextField fx:id="txtRegname" layoutX="84.0" layoutY="170.0" prefHeight="53.0" prefWidth="533.0" promptText="Username">
                      <font>
                         <Font name="System Bold" size="21.0" />
                      </font>
                   </TextField>
-                  <TextField fx:id="txtRegPassword" layoutX="84.0" layoutY="266.0" prefHeight="53.0" prefWidth="533.0" promptText="Password">
+                  <TextField fx:id="txtRegPassword" layoutX="84.0" layoutY="243.0" prefHeight="53.0" prefWidth="533.0" promptText="Password">
                      <font>
                         <Font name="System Bold" size="21.0" />
                      </font>
                   </TextField>
-                  <TextField fx:id="txtRegEmail" layoutX="84.0" layoutY="335.0" prefHeight="53.0" prefWidth="533.0" promptText="Email">
+                  <TextField fx:id="txtRegEmail" layoutX="84.0" layoutY="308.0" prefHeight="53.0" prefWidth="533.0" promptText="Email">
                      <font>
                         <Font name="System Bold" size="21.0" />
                      </font>
                   </TextField>
-                  <TextField fx:id="txtRegPhoneNo" layoutX="84.0" layoutY="409.0" prefHeight="53.0" prefWidth="533.0" promptText="Contact Number">
+                  <TextField fx:id="txtRegPhoneNo" layoutX="84.0" layoutY="374.0" prefHeight="53.0" prefWidth="533.0" promptText="Contact Number">
                      <font>
                         <Font name="System Bold" size="21.0" />
                      </font>
                   </TextField>
-                  <Label layoutX="84.0" layoutY="489.0" prefHeight="42.0" prefWidth="121.0" text="Gender">
+                  <Label layoutX="84.0" layoutY="454.0" prefHeight="42.0" prefWidth="121.0" text="Gender">
                      <font>
                         <Font name="System Bold" size="21.0" />
                      </font>
                   </Label>
-                  <RadioButton fx:id="male" layoutX="235.0" layoutY="496.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="137.0" text="Male">
+                  <RadioButton fx:id="male" layoutX="240.0" layoutY="461.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="137.0" text="Male">
                      <font>
                         <Font name="System Bold" size="19.0" />
                      </font>
                   </RadioButton>
-                  <RadioButton fx:id="female" layoutX="417.0" layoutY="496.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="137.0" text="Female">
+                  <RadioButton fx:id="female" layoutX="444.0" layoutY="461.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="137.0" text="Female">
                      <font>
                         <Font name="System Bold" size="19.0" />
                      </font>
                   </RadioButton>
-                  <Button layoutX="166.0" layoutY="562.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="336.0" style="-fx-border-radius: 90; -fx-background-radius: 90;" text="Create Account" />
+                  <Button layoutX="161.0" layoutY="591.0" mnemonicParsing="false" onAction="#registration" prefHeight="48.0" prefWidth="348.0" style="-fx-border-radius: 90; -fx-background-radius: 90; -fx-background-color: white; -fx-border-color: green;" text="Create Account" textFill="#39b966">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font></Button>
+                  <Label alignment="CENTER" layoutX="45.0" layoutY="691.0" prefHeight="42.0" prefWidth="580.0" text="Already Have an Account" textFill="#5d2cd0">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="getStarted" layoutX="164.0" layoutY="742.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="48.0" prefWidth="348.0" style="-fx-border-radius: 90; -fx-background-radius: 90; -fx-background-color: white; -fx-border-color: blue;" text="Log In Here" textFill="#1322c6">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="success" alignment="CENTER" layoutX="62.0" layoutY="641.0" prefHeight="42.0" prefWidth="545.0" text="Registration Successful" textFill="#14d33a">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="controlRegLabel" alignment="CENTER" layoutX="65.0" layoutY="524.0" prefHeight="42.0" prefWidth="545.0" text="Please Enter Nessary Information" textFill="#e12211">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
                </children>
             </Pane>
          </children>
