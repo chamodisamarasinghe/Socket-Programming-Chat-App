@@ -5,18 +5,18 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="917.0" prefWidth="772.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.LoginFormController">
+<AnchorPane prefHeight="917.0" prefWidth="779.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.LoginFormController">
    <children>
       <StackPane layoutX="10.0" layoutY="7.0" prefHeight="908.0" prefWidth="761.0">
          <children>
-            <Pane fx:id="pnSignUp" prefHeight="617.0" prefWidth="536.0" style="-fx-background-color: #ffffff;">
+            <Pane fx:id="pnSignUp" prefHeight="617.0" prefWidth="536.0" style="-fx-background-color: #ffffff; -fx-border-color: green; -fx-border-width: 10;">
                <children>
                   <Label alignment="CENTER" layoutX="-2.0" layoutY="18.0" prefHeight="62.0" prefWidth="761.0" text="Sing Up" textFill="#29dd56">
                      <font>
                         <Font name="System Bold" size="48.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="txtRegname" layoutX="70.0" layoutY="189.0" prefHeight="46.0" prefWidth="624.0" promptText="Username">
+                  <TextField fx:id="txtRegname" layoutX="70.0" layoutY="180.0" prefHeight="46.0" prefWidth="624.0" promptText="Username">
                      <font>
                         <Font name="System Bold" size="17.0" />
                      </font></TextField>
@@ -63,9 +63,9 @@
                         <Font name="Arial" size="16.0" />
                      </font>
                   </Label>
-                  <Label fx:id="success" layoutX="177.0" layoutY="441.0" opacity="0.0" text="Registration Successful" textFill="#6abf69">
+                  <Label fx:id="success" layoutX="177.0" layoutY="473.0" opacity="0.0" prefHeight="53.0" prefWidth="439.0" text="Registration Successful" textFill="#6abf69">
                      <font>
-                        <Font size="18.0" />
+                        <Font name="System Bold" size="28.0" />
                      </font>
                   </Label>
                   <Label fx:id="goBack" layoutX="176.0" layoutY="468.0" opacity="0.0" textFill="#6abf69">
@@ -85,7 +85,7 @@
                   </Label>
                </children>
             </Pane>
-            <Pane fx:id="pnSignIn" prefHeight="610.0" prefWidth="512.0" style="-fx-background-color: white;">
+            <Pane fx:id="pnSignIn" prefHeight="610.0" prefWidth="512.0" style="-fx-background-color: white; -fx-border-color: green; -fx-border-width: 10;">
                <children>
                   <Label alignment="CENTER" contentDisplay="CENTER" layoutX="13.0" layoutY="704.0" prefHeight="46.0" prefWidth="741.0" text="Create your Account. / Sing Up Here" textFill="#53608a">
                      <font>
