@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="765.0" prefWidth="1179.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.ChatRoomBoxController">
+   <children>
+      <Pane prefHeight="774.0" prefWidth="292.0" style="-fx-background-color: #1E9E1E;">
+         <children>
+            <Circle fx:id="showProPic" fill="#1a8421" layoutX="137.0" layoutY="190.0" radius="61.0" stroke="#6cda84" strokeType="INSIDE" />
+            <Label alignment="CENTER" layoutX="1.0" layoutY="8.0" prefHeight="83.0" prefWidth="280.0" text="Chat Room" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="44.0" />
+               </font>
+            </Label>
+            <Label fx:id="clientName" alignment="CENTER" layoutX="7.0" layoutY="387.0" prefHeight="83.0" prefWidth="280.0" text="Username" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="37.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="92.0" fitWidth="95.0" layoutX="89.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8-user-64%20(1).png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane fx:id="chat" layoutX="300.0" prefHeight="774.0" prefWidth="877.0" style="-fx-background-color: white;">
+         <children>
+            <TextArea fx:id="msgRoom" editable="false" layoutX="15.0" layoutY="10.0" prefHeight="635.0" prefWidth="839.0" style="-fx-border-color: green; -fx-border-width: 10; -fx-background-radius: 40; -fx-background-radius: 40;">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font></TextArea>
+            <TextField fx:id="msgField" layoutX="84.0" layoutY="686.0" onKeyPressed="#sendMessageByKey" prefHeight="60.0" prefWidth="543.0" promptText="Type a message" style="-fx-background-radius: 90;">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></TextField>
+            <ImageView fitHeight="39.0" fitWidth="41.0" layoutX="772.0" layoutY="696.0" onMouseClicked="#handleSendEvent" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8-sent-24.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="33.0" fitWidth="39.0" layoutX="565.0" layoutY="700.0" onMousePressed="#selectImage" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8-camera-50.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
