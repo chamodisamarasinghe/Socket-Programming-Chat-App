@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="917.0" prefWidth="772.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.LoginFormController">
+   <children>
+      <StackPane layoutX="10.0" layoutY="7.0" prefHeight="908.0" prefWidth="761.0">
+         <children>
+            <Pane fx:id="pnSignUp" prefHeight="617.0" prefWidth="536.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <Label alignment="CENTER" layoutX="-2.0" layoutY="18.0" prefHeight="62.0" prefWidth="761.0" text="Sing Up" textFill="#29dd56">
+                     <font>
+                        <Font name="System Bold" size="48.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtRegname" layoutX="70.0" layoutY="189.0" prefHeight="46.0" prefWidth="624.0" promptText="Username">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font></TextField>
+                  <TextField fx:id="txtRegFirstname" layoutX="70.0" layoutY="126.0" prefHeight="46.0" prefWidth="624.0" promptText="Full Name">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font></TextField>
+                  <TextField fx:id="txtRegPassword" layoutX="70.0" layoutY="240.0" prefHeight="46.0" prefWidth="624.0" promptText="Password">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font></TextField>
+                  <TextField fx:id="txtRegEmail" layoutX="70.0" layoutY="301.0" prefHeight="46.0" prefWidth="624.0" promptText="Email">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font></TextField>
+                  <TextField fx:id="txtRegPhoneNo" layoutX="70.0" layoutY="357.0" prefHeight="46.0" prefWidth="624.0" promptText="Phone Number">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font></TextField>
+                  <Button layoutX="150.0" layoutY="596.0" mnemonicParsing="false" onAction="#registration" prefHeight="62.0" prefWidth="500.0" style="-fx-background-color: white; -fx-border-color: #4cd137; -fx-background-radius: 90; -fx-border-radius: 90;" styleClass="btnCreat" stylesheets="@../css/Style.css" text="Create Account" textFill="#4ee408">
+                     <font>
+                        <Font name="System Bold" size="26.0" />
+                     </font>
+                  </Button>
+                  <RadioButton fx:id="female" layoutX="565.0" layoutY="424.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="138.0" text="Female" textFill="#070707">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="Gender" />
+                     </toggleGroup>
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="male" layoutX="324.0" layoutY="434.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="162.0" text="Male" toggleGroup="$Gender">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font></RadioButton>
+                  <Label layoutX="70.0" layoutY="431.0" prefHeight="38.0" prefWidth="138.0" text="Gender">
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="controlRegLabel" layoutX="121.0" layoutY="357.0" opacity="0.0" text="Please, Enter all the necessary Info" textFill="#f44336">
+                     <font>
+                        <Font name="Arial" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="success" layoutX="177.0" layoutY="441.0" opacity="0.0" text="Registration Successful" textFill="#6abf69">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="goBack" layoutX="176.0" layoutY="468.0" opacity="0.0" textFill="#6abf69">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="getStarted" layoutX="153.0" layoutY="815.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="62.0" prefWidth="500.0" style="-fx-background-color: #f5f6fa; -fx-background-radius: 90;" styleClass="btnLogin" stylesheets="@../css/Style.css" text="Log In Here" textFill="#37c2f8">
+                     <font>
+                        <Font name="System Bold" size="26.0" />
+                     </font>
+                  </Button>
+                  <Label alignment="CENTER" layoutX="12.0" layoutY="739.0" prefHeight="62.0" prefWidth="733.0" text="Already Have an Account?" textFill="#649490">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="pnSignIn" prefHeight="610.0" prefWidth="512.0" style="-fx-background-color: white;">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="13.0" layoutY="704.0" prefHeight="46.0" prefWidth="741.0" text="Create your Account. / Sing Up Here" textFill="#53608a">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnSignUp" layoutX="149.0" layoutY="783.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="62.0" prefWidth="500.0" style="-fx-background-color: ehite; -fx-background-radius: 90; -fx-border-color: #6bcd55; -fx-border-radius: 90;" styleClass="btnSingUp" stylesheets="@../css/Style.css" text="Sing Up" textFill="#6bcd55">
+                     <font>
+                        <Font name="System Bold" size="26.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="149.0" layoutY="536.0" mnemonicParsing="false" onAction="#login" prefHeight="62.0" prefWidth="500.0" style="-fx-background-radius: 90; -fx-border-color: #0fbcf9; -fx-border-radius: 90; -fx-background-color: white;" styleClass="btnLogin" stylesheets="@../css/Style.css" text="Login" textFill="#0fbcf9">
+                     <font>
+                        <Font name="System Bold" size="26.0" />
+                     </font>
+                  </Button>
+                  <PasswordField fx:id="txtPassword" layoutX="72.0" layoutY="359.0" prefHeight="46.0" prefWidth="624.0" promptText="Password">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font></PasswordField>
+                  <TextField fx:id="txtUsername" layoutX="72.0" layoutY="288.0" prefHeight="46.0" prefWidth="624.0" promptText="Username">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font></TextField>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-2.0" layoutY="160.0" prefHeight="81.0" prefWidth="761.0" text="Log In" textFill="#1ae145">
+                     <font>
+                        <Font name="System Bold" size="48.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="loginNotifier" alignment="CENTER" layoutX="2.0" layoutY="446.0" opacity="0.0" prefHeight="46.0" prefWidth="761.0" text="Username or password is incorrect" textFill="#ff5353">
+                     <font>
+                        <Font name="Arial Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="106.0" fitWidth="140.0" layoutX="347.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/log.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>
