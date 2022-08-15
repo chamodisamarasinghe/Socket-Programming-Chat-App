@@ -1,0 +1,18 @@
+
+.btnSingUp:hover{
+    -fx-background-color:  #6bcd55 !important;
+    -fx-text-fill: white;
+}
+
+.btnLogin:hover {
+    -fx-background-color: #2bb5ef !important;
+    -fx-text-fill: #ffffff;
+}
+
+.btnCreat:hover{
+    -fx-background-color: #a0ff5e !important;
+    -fx-text-fill: white;
+}
+
+
+
