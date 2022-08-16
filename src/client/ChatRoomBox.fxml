@@ -59,9 +59,19 @@
             </ImageView>
             <Pane fx:id="emojiPane" layoutX="14.0" layoutY="605.0" prefHeight="60.0" prefWidth="613.0" style="-fx-background-color: #5AA081; -fx-background-radius: 90;">
                <children>
-                  <ImageView fx:id="txtClientMsg" fitHeight="22.0" fitWidth="33.0" layoutX="20.0" layoutY="13.0" onMouseClicked="#emoji1OnCLicked" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="39.0" fitWidth="33.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#emoji1OnCLicked" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../assets/icons8-emoji-32.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="33.0" fitWidth="33.0" layoutX="58.0" layoutY="15.0" onMouseClicked="#emoji2OnCLicked" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icons8-emoji-32%20(1).png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="33.0" fitWidth="33.0" layoutX="105.0" layoutY="15.0" onMouseClicked="#emoji3OnCLicked" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icons8-emoji-32%20(4).png" />
                      </image>
                   </ImageView>
                </children>
