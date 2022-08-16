@@ -153,4 +153,20 @@ public class ChatRoomBoxController extends Thread implements Initializable {
     public void emoji3OnCLicked(MouseEvent mouseEvent) {
         msgField.appendText("\uD83D\uDE34");
     }
+
+    public void emoji4OnCLicked(MouseEvent mouseEvent) {
+        msgField.appendText("\uD83D\uDC97");
+    }
+
+    public void emoji5OnCLicked(MouseEvent mouseEvent) {
+        msgField.appendText("\uD83C\uDF3C");
+    }
+
+    public void emoji6OnCLicked(MouseEvent mouseEvent) {
+        msgField.appendText("\uD83C\uDF3F");
+    }
+
+    public void emoji7OnCLicked(MouseEvent mouseEvent) {
+        msgField.appendText("\uD83C\uDF82");
+    }
 }

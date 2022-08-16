@@ -74,6 +74,26 @@
                         <Image url="@../assets/icons8-emoji-32%20(4).png" />
                      </image>
                   </ImageView>
+                  <ImageView fitHeight="33.0" fitWidth="33.0" layoutX="157.0" layoutY="15.0" onMouseClicked="#emoji4OnCLicked" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icons8-red-heart-48.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="33.0" fitWidth="33.0" layoutX="199.0" layoutY="14.0" onMouseClicked="#emoji5OnCLicked" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icons8-flower-doodle-48.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="33.0" fitWidth="33.0" layoutX="242.0" layoutY="15.0" onMouseClicked="#emoji6OnCLicked" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icons8-potted-plant-48.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="33.0" fitWidth="33.0" layoutX="299.0" layoutY="15.0" onMouseClicked="#emoji7OnCLicked" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icons8-birthday-cake-emoji-48.png" />
+                     </image>
+                  </ImageView>
                </children>
             </Pane>
          </children>
