@@ -7,7 +7,9 @@ import javafx.geometry.NodeOrientation;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyEvent;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
 import javafx.scene.shape.Circle;
 import javafx.stage.FileChooser;
@@ -21,6 +23,8 @@ public class ChatRoomBoxController extends Thread implements Initializable {
 
     public Pane chat;
     public Circle showProPic;
+    public Pane emojiPane;
+    public ImageView txtClientMsg;
     @FXML
     private Label clientName;
 
@@ -41,9 +45,16 @@ public class ChatRoomBoxController extends Thread implements Initializable {
     PrintWriter writer;
     Socket socket;
 
+
+    public void initialize(){
+        emojiPane.setVisible(false);
+    }
+
+
+
     public void connectSocket() {
         try {
-            socket = new Socket("localhost", 5003);
+            socket = new Socket("localhost", 5000);
             System.out.println("Socket is connected with server!");
             reader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
             writer = new PrintWriter(socket.getOutputStream(), true);
@@ -123,4 +134,15 @@ public class ChatRoomBoxController extends Thread implements Initializable {
 
     }
 
+    public void emojiOnClick(MouseEvent mouseEvent) {
+        if (!emojiPane.isVisible()) {
+            emojiPane.setVisible(true);
+        } else {
+            emojiPane.setVisible(false);
+        }
+    }
+
+    public void emoji1OnCLicked(MouseEvent mouseEvent) {
+        msgField.appendText("\uD83D\uDE42");
+    }
 }
