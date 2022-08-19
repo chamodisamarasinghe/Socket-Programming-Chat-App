@@ -12,7 +12,7 @@
 
 <AnchorPane prefHeight="758.0" prefWidth="911.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.ChatRoomBoxController">
    <children>
-      <Pane prefHeight="758.0" prefWidth="269.0" style="-fx-background-color: #1E9E1E;">
+      <Pane prefHeight="758.0" prefWidth="276.0" style="-fx-background-color: #1E9E1E;">
          <children>
             <Circle fx:id="showProPic" fill="#1a8421" layoutX="137.0" layoutY="190.0" radius="61.0" stroke="#6cda84" strokeType="INSIDE" />
             <Label alignment="CENTER" layoutX="1.0" layoutY="8.0" prefHeight="83.0" prefWidth="262.0" text="Chat Room" textFill="WHITE">
@@ -28,6 +28,11 @@
             <ImageView fitHeight="92.0" fitWidth="95.0" layoutX="89.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../assets/icons8-user-64%20(1).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="193.0" fitWidth="262.0" layoutX="3.0" layoutY="443.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/cha.png" />
                </image>
             </ImageView>
          </children>
@@ -47,7 +52,7 @@
                   <Image url="@../assets/icons8-sent-24.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="33.0" fitWidth="39.0" layoutX="505.0" layoutY="690.0" onMousePressed="#selectImage" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="33.0" fitWidth="39.0" layoutX="505.0" layoutY="690.0" onMouseClicked="#imgOnAction" onMousePressed="#selectImage" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../assets/icons8-camera-50.png" />
                </image>
@@ -74,24 +79,54 @@
                         <Image url="@../assets/icons8-emoji-32%20(4).png" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="33.0" fitWidth="33.0" layoutX="157.0" layoutY="15.0" onMouseClicked="#emoji4OnCLicked" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="39.0" fitWidth="39.0" layoutX="244.0" layoutY="12.0" onMouseClicked="#emoji4OnCLicked" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../assets/icons8-red-heart-48.png" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="33.0" fitWidth="33.0" layoutX="199.0" layoutY="14.0" onMouseClicked="#emoji5OnCLicked" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="39.0" fitWidth="39.0" layoutX="287.0" layoutY="12.0" onMouseClicked="#emoji5OnCLicked" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../assets/icons8-flower-doodle-48.png" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="33.0" fitWidth="33.0" layoutX="242.0" layoutY="15.0" onMouseClicked="#emoji6OnCLicked" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="39.0" fitWidth="39.0" layoutX="329.0" layoutY="9.0" onMouseClicked="#emoji6OnCLicked" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../assets/icons8-potted-plant-48.png" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="33.0" fitWidth="33.0" layoutX="299.0" layoutY="15.0" onMouseClicked="#emoji7OnCLicked" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="39.0" fitWidth="39.0" layoutX="379.0" layoutY="9.0" onMouseClicked="#emoji7OnCLicked" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../assets/icons8-birthday-cake-emoji-48.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="33.0" fitWidth="33.0" layoutX="154.0" layoutY="15.0" onMouseClicked="#emoji8OnCLicked" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icons8-emoji-32%20(3).png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="39.0" fitWidth="39.0" layoutX="426.0" layoutY="9.0" onMouseClicked="#emoji9OnCLicked" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icons8-chocolate-bar-emoji-48.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="33.0" fitWidth="33.0" layoutX="202.0" layoutY="15.0" onMouseClicked="#emoji10OnCLicked" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icons8-emoji-32%20(2).png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="39.0" fitWidth="39.0" layoutX="473.0" layoutY="12.0" onMouseClicked="#emoji11OnCLicked" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icons8-cupcake-emoji-48.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="46.0" fitWidth="48.0" layoutX="512.0" layoutY="8.0" onMouseClicked="#emoji12OnCLicked" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icons8-duck-100.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="46.0" fitWidth="48.0" layoutX="553.0" layoutY="9.0" onMouseClicked="#emoji13OnCLicked" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icons8-fish-100.png" />
                      </image>
                   </ImageView>
                </children>

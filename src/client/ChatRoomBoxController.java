@@ -4,6 +4,7 @@ package client;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.geometry.NodeOrientation;
+import javafx.scene.Node;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
@@ -13,6 +14,7 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
 import javafx.scene.shape.Circle;
 import javafx.stage.FileChooser;
+import javafx.stage.Stage;
 
 import java.io.*;
 import java.net.Socket;
@@ -168,5 +170,44 @@ public class ChatRoomBoxController extends Thread implements Initializable {
 
     public void emoji7OnCLicked(MouseEvent mouseEvent) {
         msgField.appendText("\uD83C\uDF82");
+    }
+
+    public void emoji8OnCLicked(MouseEvent mouseEvent) {
+        msgField.appendText("\uD83D\uDE0E");
+    }
+
+    public void emoji9OnCLicked(MouseEvent mouseEvent) {
+        msgField.appendText("\uD83C\uDF6B");
+    }
+
+    public void emoji10OnCLicked(MouseEvent mouseEvent) {
+        msgField.appendText("\uD83D\uDE0D");
+    }
+
+    public void emoji11OnCLicked(MouseEvent mouseEvent) {
+        msgField.appendText("\uD83E\uDDC1");
+    }
+
+    public void emoji12OnCLicked(MouseEvent mouseEvent) {
+        msgField.appendText("\uD83D\uDC24");
+    }
+
+    public void emoji13OnCLicked(MouseEvent mouseEvent) {
+        msgField.appendText("\uD83D\uDC1F");
+    }
+
+
+
+
+
+
+
+    public void imgOnAction(MouseEvent mouseEvent) {
+//        Stage stage = (Stage) ((Node) mouseEvent.getSource()).getScene().getWindow();
+//        chooser = new FileChooser();
+//        chooser.setTitle("Open Image");
+//        this.path = chooser.showOpenDialog(stage);
+//        printWriter.println(clientlbl.getText() + " " + "img" + path.getPath());
+//        printWriter.flush();
     }
 }
