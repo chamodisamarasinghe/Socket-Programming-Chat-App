@@ -30,11 +30,15 @@
                   <Image url="@../assets/icons8-user-64%20(1).png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="193.0" fitWidth="262.0" layoutX="3.0" layoutY="443.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../assets/cha.png" />
-               </image>
-            </ImageView>
+            <Pane layoutY="425.0" prefHeight="273.0" prefWidth="262.0">
+               <children>
+                  <ImageView fitHeight="273.0" fitWidth="262.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/cha.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
          </children>
       </Pane>
       <Pane fx:id="chat" layoutX="267.0" prefHeight="758.0" prefWidth="639.0" style="-fx-background-color: white;">
