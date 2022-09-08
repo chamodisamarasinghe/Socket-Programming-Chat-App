@@ -1,4 +1,5 @@
 # Socket-Programming-Chat-App
 
 
-<img src="assets/images/sign.png" width="1000">
+<img src="assets/images/log.png" width="1000">
+
